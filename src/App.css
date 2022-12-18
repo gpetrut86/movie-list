@@ -1,0 +1,43 @@
+
+
+body{
+  background-color: var(--light-color2);
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  min-height: 75vh;
+
+
+}
+
+.loading-element{
+  margin: auto;
+  scale: 1.5;
+}
+
+@media  (min-width: 768px) {
+  .navigation-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  
+}
+
+
+
+@media  (min-width: 2000px) {
+  .navigation-container{
+   
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  
+}
+  
+  
+

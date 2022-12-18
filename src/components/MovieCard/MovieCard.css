@@ -1,0 +1,80 @@
+/* movie card with top image adn bottom title and date */
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-color2);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  width: 250px;
+  height: 400px;
+}
+
+
+
+
+
+
+.movie-card img {
+  width: 100%;
+  height: 70%;
+  object-fit: fill;
+  position: relative;
+}
+
+
+
+
+
+.movie-card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 30%;
+}
+
+
+.movie-card-title{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5px;
+    color: var(--light-color);
+    padding: 5px;
+    height: 30px;
+}
+
+.movie-card-date{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--light-color2);
+}
+
+.movie-card-button-favorite{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    color: var(--light-color2);
+    transition: color 0.3s ease-in-out;
+    margin-top: 5px;
+
+}
+
+.movie-card-button-favorite:hover{
+    color: var(--light-color);
+    transform: scale(1.05);
+  }
+
+  .is-favorite{
+    color: var(--red-color)!important;
+  }
